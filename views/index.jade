@@ -1,0 +1,30 @@
+//- extends layout -> will have the same view in all webpages 
+extends layout 
+
+block content 
+  .card.text-bg-dark
+      img.card-img(src='/images/wwpakcargo_ad.jpeg')
+      .card-img-overlay
+        h5.card-title WWPAKCARGO
+
+  .container
+    
+  .container
+    .form-floating.mb-3.mt-3
+      input#email.form-control(type='text', placeholder='Enter First Name', name='firstName')
+      label(for='firstName') First Name
+    .form-floating.mb-3.mt-3
+      input#email.form-control(type='text', placeholder='Enter Last Name', name='lastName')
+      label(for='lastName') Last Name
+    .form-floating.mb-3.mt-3
+      input#email.form-control(type='text', placeholder='Enter Email', name='email')
+      label(for='email') Email
+    .form-floating.mb-3.mt-3
+      input#email.form-control(type='text', placeholder='Enter Phone Number', name='contact')
+      label(for='contact') Contact
+    button.btn.btn-outline-primary(type='button') Get Quote
+  .container
+
+
+    
+  
