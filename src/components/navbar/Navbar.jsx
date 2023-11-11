@@ -8,32 +8,37 @@ import logo from '../../assets/WWP_LOGO.jpg'
 
 const Menu = () => (
   <> 
-    <p><a href="#home">Home</a></p>
+    <p><a href="#home">SHIP</a></p>
     <p><a href="#wgpt3">TRACK</a></p>
-    <p><a href="#possibility">SHIP</a></p>
+    <p><a href="#possibility">INFO</a></p>
     <p><a href="#features">QUOTE</a></p>
     <p><a href="#blog">ABOUT</a></p>
   </>
   
 )
+
 export const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false); 
 
   return (
 
     <div className="gpt3__navbar">
-    <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
-          <img src={logo} />
-        </div>
-        <div className="gpt3__navbar-links_container">
-          <Menu/> 
-        </div>
+
+      <div className="gpt3__navbar-links">
+          <div className="gpt3__navbar-links_logo">
+            <img src={logo} />
+          </div>
+          
+          <div className="gpt3__navbar-links_container">
+            <Menu/> 
+          </div>
       </div>
+
       <div className="gpt3__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign up</button>
+        <p> Sign in </p>
+        <button type="button"> Sign up </button>
       </div>
+
       <div className="gpt3__navbar-menu"> 
         {toggleMenu
           ? <RiCloseLine color="fff" size={27} onClick={() => setToggleMenu(false)}/>  
@@ -52,6 +57,7 @@ export const Navbar = () => {
           </div>
         )}
       </div>
+
     </div>
 
   )

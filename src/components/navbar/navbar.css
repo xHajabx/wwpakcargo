@@ -4,6 +4,9 @@
     align-items: center;
 
     padding: 2rem 6rem;
+
+    /* HS */
+    background: #39468A; 
 }
 
 .gpt3__navbar-links {

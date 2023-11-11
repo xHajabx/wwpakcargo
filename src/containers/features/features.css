@@ -1,0 +1,111 @@
+.gpt3__features {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.gpt3__features-heading { 
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+.gpt3__features-heading h1 {
+    font-family: var(--font-family);
+    font-size: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+}
+
+.gpt3__features-heading p {
+    color: var(--color-subtext);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-family);
+
+    margin-top: 2rem;
+}
+
+.gpt3__features-container {
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+@media screen and (max-width: 990px) {
+    .gpt3__features {
+        flex-direction: column;
+    }
+
+    .gpt3__features-heading {
+        margin: 0 0 2rem 0;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .gpt3__features-heading h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+
+
+.track_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 10px; 
+}
+
+.track_container h1 {
+    font-family: var(--font-family);
+    font-size: 30px;
+    color: white; 
+
+}
+
+.track_container label {
+    color: white;
+    font-family: var(--font-family);
+    font-size: 20px; 
+}
+
+.track_container input {
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 10px 10px; 
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06)
+}
+
+.track_container button {
+    border-radius: 10px;
+    background-color: white;
+    color: #040443; 
+    padding: 10px 10px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px; 
+    transition-duration: 0.4s;
+}
+
+.track_container button:hover {
+    background-color: #040443;
+    color: white;
+}

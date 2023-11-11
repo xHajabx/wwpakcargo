@@ -6,7 +6,7 @@
 }
 
 body {
-    background: var(--color-bg);
+    background: #040443;
 }
 
 a {
@@ -74,6 +74,6 @@ a {
         padding: 4rem 2rem; 
     }
     .section__margin {
-        margin: 4rem 2 rem; 
+        margin: 4rem 2rem; 
     }
 }
